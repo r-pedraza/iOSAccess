@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="320" id="KGk-i7-Jjw" customClass="RPLDetailWeatherTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="106"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hora: 10h" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lfv-yR-0I8">
+                        <rect key="frame" x="244" y="16" width="68" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Lfv-yR-0I8" secondAttribute="height" multiplier="34:9" id="9fH-hH-eKh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cloudy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UT9-ds-uIe">
+                        <rect key="frame" x="4" y="76" width="43" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="UT9-ds-uIe" secondAttribute="height" multiplier="43:16" id="4lB-IX-igB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temperatura: 10º" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1WS-cF-ssi">
+                        <rect key="frame" x="4" y="16" width="118" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="1WS-cF-ssi" secondAttribute="height" multiplier="59:9" id="Rcp-aa-GwH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1WS-cF-ssi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="1gC-UZ-dSU"/>
+                    <constraint firstItem="Lfv-yR-0I8" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="5Y4-yr-x4m"/>
+                    <constraint firstItem="1WS-cF-ssi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-4" id="Caf-md-kM9"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="UT9-ds-uIe" secondAttribute="bottom" constant="6" id="Fy8-UW-mHy"/>
+                    <constraint firstItem="Lfv-yR-0I8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="d43-kt-WTZ"/>
+                    <constraint firstItem="UT9-ds-uIe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-4" id="neU-zJ-JG2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="hourLabel" destination="Lfv-yR-0I8" id="FPU-aS-2K9"/>
+                <outlet property="summaryLabel" destination="UT9-ds-uIe" id="zF7-8b-87o"/>
+                <outlet property="temperatureLabel" destination="1WS-cF-ssi" id="5rE-fx-reC"/>
+            </connections>
+            <point key="canvasLocation" x="353" y="276"/>
+        </tableViewCell>
+    </objects>
+</document>
