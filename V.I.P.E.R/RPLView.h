@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface RPLView : NSObject
+
+@protocol RPLView <NSObject>
+
+-(void)setListWhitObjectWeather:(NSArray*)weathers;
 
 @end

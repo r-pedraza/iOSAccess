@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RPLView.h"
+#import "RPLInteractor.h"
+#import <MapKit/MapKit.h>
 
-@interface RPLPresenter : NSObject
+@interface RPLPresenter : NSObject<RPLInteractorOutput>
 
+@property (weak,nonatomic)   id<RPLView>           view;
+@property (strong,nonatomic) id<RPLInteractorInput> interactor;
+-(void) restApiConexionWithLatitude:(double)latitude longitude:(double)longitude url:(NSString*)url;
+-(void)addNewWeathers:(NSArray *)weathers;
 @end

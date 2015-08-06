@@ -10,4 +10,14 @@
 
 @interface RPLEntity : NSObject
 
+@property (copy,nonatomic) NSString *temperature;
+@property (copy,nonatomic) NSString *hour;
+@property (copy,nonatomic) NSString *summary;
+
++(id)weatherWithDictionary:(NSDictionary *)dictionary;
+-(id)initWithDictionary:(NSDictionary *)dic;
+-(id)initWithTemperature:(NSString *)temperature
+                    hour:(NSString *)hour
+                 summary:(NSString *)summary;
+
 @end

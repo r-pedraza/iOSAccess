@@ -9,11 +9,21 @@
 /* Begin PBXBuildFile section */
 		C433FD851B72281100CA647A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C433FD841B72281100CA647A /* main.m */; };
 		C433FD881B72281100CA647A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C433FD871B72281100CA647A /* AppDelegate.m */; };
-		C433FD8B1B72281100CA647A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C433FD8A1B72281100CA647A /* ViewController.m */; };
 		C433FD8E1B72281100CA647A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C433FD8C1B72281100CA647A /* Main.storyboard */; };
 		C433FD901B72281100CA647A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C433FD8F1B72281100CA647A /* Images.xcassets */; };
 		C433FD931B72281100CA647A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C433FD911B72281100CA647A /* LaunchScreen.xib */; };
 		C433FD9F1B72281100CA647A /* V_I_P_E_RTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C433FD9E1B72281100CA647A /* V_I_P_E_RTests.m */; };
+		C433FDBF1B723A0600CA647A /* RPLInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = C433FDBE1B723A0600CA647A /* RPLInteractor.m */; };
+		C433FDC51B723AB700CA647A /* RPLPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = C433FDC41B723AB700CA647A /* RPLPresenter.m */; };
+		C433FDC81B723C8400CA647A /* RPLEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = C433FDC71B723C8400CA647A /* RPLEntity.m */; };
+		C433FDCB1B723CF000CA647A /* RPLConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = C433FDCA1B723CF000CA647A /* RPLConstants.m */; };
+		C433FDD21B72495D00CA647A /* RPLDetailWeatherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C433FDCF1B72495D00CA647A /* RPLDetailWeatherTableViewCell.xib */; };
+		C433FDD31B72495D00CA647A /* RPLDetailWeatherTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C433FDD11B72495D00CA647A /* RPLDetailWeatherTableViewCell.m */; };
+		C433FDD71B724E2000CA647A /* RPLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C433FDD61B724E2000CA647A /* RPLViewController.m */; };
+		C433FDDF1B72526900CA647A /* RPLMapModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C433FDDC1B72526900CA647A /* RPLMapModel.m */; };
+		C433FDE41B7253FF00CA647A /* RPLRestApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = C433FDE31B7253FF00CA647A /* RPLRestApi.swift */; };
+		C433FDE61B7254E800CA647A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C433FDE51B7254E800CA647A /* MapKit.framework */; };
+		C433FDE81B72550000CA647A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C433FDE71B72550000CA647A /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +42,33 @@
 		C433FD841B72281100CA647A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C433FD861B72281100CA647A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C433FD871B72281100CA647A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C433FD891B72281100CA647A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C433FD8A1B72281100CA647A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C433FD8D1B72281100CA647A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C433FD8F1B72281100CA647A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C433FD921B72281100CA647A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C433FD981B72281100CA647A /* V.I.P.E.RTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = V.I.P.E.RTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C433FD9D1B72281100CA647A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C433FD9E1B72281100CA647A /* V_I_P_E_RTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = V_I_P_E_RTests.m; sourceTree = "<group>"; };
+		C433FDBA1B72395100CA647A /* RPLInteractorIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPLInteractorIO.h; sourceTree = "<group>"; };
+		C433FDBD1B723A0600CA647A /* RPLInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPLInteractor.h; sourceTree = "<group>"; };
+		C433FDBE1B723A0600CA647A /* RPLInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPLInteractor.m; sourceTree = "<group>"; };
+		C433FDC01B723A6C00CA647A /* RPLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPLView.h; sourceTree = "<group>"; };
+		C433FDC31B723AB700CA647A /* RPLPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPLPresenter.h; sourceTree = "<group>"; };
+		C433FDC41B723AB700CA647A /* RPLPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPLPresenter.m; sourceTree = "<group>"; };
+		C433FDC61B723C8400CA647A /* RPLEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPLEntity.h; sourceTree = "<group>"; };
+		C433FDC71B723C8400CA647A /* RPLEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPLEntity.m; sourceTree = "<group>"; };
+		C433FDC91B723CF000CA647A /* RPLConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPLConstants.h; sourceTree = "<group>"; };
+		C433FDCA1B723CF000CA647A /* RPLConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPLConstants.m; sourceTree = "<group>"; };
+		C433FDCF1B72495D00CA647A /* RPLDetailWeatherTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RPLDetailWeatherTableViewCell.xib; sourceTree = "<group>"; };
+		C433FDD01B72495D00CA647A /* RPLDetailWeatherTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPLDetailWeatherTableViewCell.h; sourceTree = "<group>"; };
+		C433FDD11B72495D00CA647A /* RPLDetailWeatherTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPLDetailWeatherTableViewCell.m; sourceTree = "<group>"; };
+		C433FDD51B724E2000CA647A /* RPLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPLViewController.h; sourceTree = "<group>"; };
+		C433FDD61B724E2000CA647A /* RPLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPLViewController.m; sourceTree = "<group>"; };
+		C433FDDB1B72526900CA647A /* RPLMapModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPLMapModel.h; sourceTree = "<group>"; };
+		C433FDDC1B72526900CA647A /* RPLMapModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPLMapModel.m; sourceTree = "<group>"; };
+		C433FDE21B7253FE00CA647A /* V.I.P.E.R-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "V.I.P.E.R-Bridging-Header.h"; sourceTree = "<group>"; };
+		C433FDE31B7253FF00CA647A /* RPLRestApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RPLRestApi.swift; sourceTree = "<group>"; };
+		C433FDE51B7254E800CA647A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C433FDE71B72550000CA647A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C433FDE81B72550000CA647A /* CoreLocation.framework in Frameworks */,
+				C433FDE61B7254E800CA647A /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,9 +94,8 @@
 		C433FD761B72281100CA647A = {
 			isa = PBXGroup;
 			children = (
+				C433FDE91B72550400CA647A /* Frameworks */,
 				C433FD811B72281100CA647A /* V.I.P.E.R */,
-				C433FD9B1B72281100CA647A /* V.I.P.E.RTests */,
-				C433FD801B72281100CA647A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,19 +106,29 @@
 				C433FD981B72281100CA647A /* V.I.P.E.RTests.xctest */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		C433FD811B72281100CA647A /* V.I.P.E.R */ = {
 			isa = PBXGroup;
 			children = (
+				C433FDE11B72528900CA647A /* MVC */,
 				C433FD861B72281100CA647A /* AppDelegate.h */,
 				C433FD871B72281100CA647A /* AppDelegate.m */,
-				C433FD891B72281100CA647A /* ViewController.h */,
-				C433FD8A1B72281100CA647A /* ViewController.m */,
-				C433FD8C1B72281100CA647A /* Main.storyboard */,
-				C433FD8F1B72281100CA647A /* Images.xcassets */,
-				C433FD911B72281100CA647A /* LaunchScreen.xib */,
+				C433FDBA1B72395100CA647A /* RPLInteractorIO.h */,
+				C433FDBD1B723A0600CA647A /* RPLInteractor.h */,
+				C433FDBE1B723A0600CA647A /* RPLInteractor.m */,
+				C433FDC01B723A6C00CA647A /* RPLView.h */,
+				C433FDC31B723AB700CA647A /* RPLPresenter.h */,
+				C433FDC41B723AB700CA647A /* RPLPresenter.m */,
+				C433FDC61B723C8400CA647A /* RPLEntity.h */,
+				C433FDC71B723C8400CA647A /* RPLEntity.m */,
+				C433FDC91B723CF000CA647A /* RPLConstants.h */,
+				C433FDCA1B723CF000CA647A /* RPLConstants.m */,
 				C433FD821B72281100CA647A /* Supporting Files */,
+				C433FD801B72281100CA647A /* Products */,
+				C433FD9B1B72281100CA647A /* V.I.P.E.RTests */,
+				C433FD8F1B72281100CA647A /* Images.xcassets */,
 			);
 			path = V.I.P.E.R;
 			sourceTree = "<group>";
@@ -109,7 +149,7 @@
 				C433FD9C1B72281100CA647A /* Supporting Files */,
 			);
 			path = V.I.P.E.RTests;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		C433FD9C1B72281100CA647A /* Supporting Files */ = {
 			isa = PBXGroup;
@@ -117,6 +157,57 @@
 				C433FD9D1B72281100CA647A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C433FDD81B72518900CA647A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C433FDD01B72495D00CA647A /* RPLDetailWeatherTableViewCell.h */,
+				C433FDD11B72495D00CA647A /* RPLDetailWeatherTableViewCell.m */,
+				C433FDD51B724E2000CA647A /* RPLViewController.h */,
+				C433FDD61B724E2000CA647A /* RPLViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		C433FDD91B7251B800CA647A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C433FD8C1B72281100CA647A /* Main.storyboard */,
+				C433FD911B72281100CA647A /* LaunchScreen.xib */,
+				C433FDCF1B72495D00CA647A /* RPLDetailWeatherTableViewCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		C433FDDA1B72526000CA647A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C433FDDB1B72526900CA647A /* RPLMapModel.h */,
+				C433FDDC1B72526900CA647A /* RPLMapModel.m */,
+				C433FDE31B7253FF00CA647A /* RPLRestApi.swift */,
+				C433FDE21B7253FE00CA647A /* V.I.P.E.R-Bridging-Header.h */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		C433FDE11B72528900CA647A /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				C433FDDA1B72526000CA647A /* Models */,
+				C433FDD91B7251B800CA647A /* Views */,
+				C433FDD81B72518900CA647A /* Controllers */,
+			);
+			name = MVC;
+			sourceTree = "<group>";
+		};
+		C433FDE91B72550400CA647A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C433FDE71B72550000CA647A /* CoreLocation.framework */,
+				C433FDE51B7254E800CA647A /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +292,7 @@
 			files = (
 				C433FD8E1B72281100CA647A /* Main.storyboard in Resources */,
 				C433FD931B72281100CA647A /* LaunchScreen.xib in Resources */,
+				C433FDD21B72495D00CA647A /* RPLDetailWeatherTableViewCell.xib in Resources */,
 				C433FD901B72281100CA647A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,9 +311,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C433FD8B1B72281100CA647A /* ViewController.m in Sources */,
+				C433FDE41B7253FF00CA647A /* RPLRestApi.swift in Sources */,
 				C433FD881B72281100CA647A /* AppDelegate.m in Sources */,
+				C433FDC81B723C8400CA647A /* RPLEntity.m in Sources */,
 				C433FD851B72281100CA647A /* main.m in Sources */,
+				C433FDD31B72495D00CA647A /* RPLDetailWeatherTableViewCell.m in Sources */,
+				C433FDCB1B723CF000CA647A /* RPLConstants.m in Sources */,
+				C433FDBF1B723A0600CA647A /* RPLInteractor.m in Sources */,
+				C433FDDF1B72526900CA647A /* RPLMapModel.m in Sources */,
+				C433FDC51B723AB700CA647A /* RPLPresenter.m in Sources */,
+				C433FDD71B724E2000CA647A /* RPLViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,9 +446,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = V.I.P.E.R/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "V.I.P.E.R/V.I.P.E.R-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -357,9 +459,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = V.I.P.E.R/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "V.I.P.E.R/V.I.P.E.R-Bridging-Header.h";
 			};
 			name = Release;
 		};

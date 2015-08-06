@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface RPLViewController : UIViewController
-
+#import <MapKit/MapKit.h>
+#import "RPLView.h"
+#import "RPLPresenter.h"
+@interface RPLViewController : UIViewController<RPLView>
+@property (strong,nonatomic) NSArray *array;
+@property (strong,nonatomic) RPLPresenter *presenter;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @end

@@ -7,7 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RPLInteractorIO.h"
+#import "RPLPresenter.h"
 
-@interface RPLInteractor : NSObject
+@interface RPLInteractor : NSObject <RPLInteractorInput>
+
+@property (weak,nonatomic) id<RPLInteractorOutput> output;
+@property (strong,nonatomic) NSArray *weathers;
+@property (strong,nonatomic) NSDictionary *hourly;
 
 @end

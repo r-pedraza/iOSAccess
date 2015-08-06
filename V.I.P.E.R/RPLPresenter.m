@@ -7,7 +7,26 @@
 //
 
 #import "RPLPresenter.h"
+#import "V_I_P_E_R-Swift.h"
 
 @implementation RPLPresenter
+
+
+-(void) restApiConexionWithLatitude:(double)latitude longitude:(double)longitude url:(NSString*)url{
+
+    [self.interactor restApiConexionWithLatitude:latitude longitude:longitude url:url];
+}
+
+-(void)addNewWeathers:(NSArray *)weathers{
+
+    [self.interactor addNewWeathers:weathers];
+}
+
+
+#pragma mark - Interactor output
+-(void)updateWeather:(NSArray *)weathers{
+
+    [self.view setListWhitObjectWeather:weathers];
+}
 
 @end

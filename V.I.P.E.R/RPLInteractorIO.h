@@ -8,6 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
-@interface RPLInteractorIO : NSObject
+
+@protocol RPLInteractorInput <NSObject>
+
+-(void) addNewWeathers:(NSArray*)weathers;//Queremos crear nuevos weathers con cada llamada al Api.
+-(void) restApiConexionWithLatitude:(double)latitude longitude:(double)longitude url:(NSString*)url;
+
+@end
+
+@protocol RPLInteractorOutput <NSObject>
+
+-(void)updateWeather:(NSArray*)weathers;
 
 @end
